@@ -293,10 +293,10 @@ function install_trojan(){
     print_info "请输入客户端代理端口"
     read your_cli_port
     print_info "======================="
-    print_info "下载一些必要工具"
+    print_info "正在下载一些必要工具"
     $systemPackage -y install net-tools socat wget unzip zip curl tar >/dev/null 2>&1
     print_info "======================="
-    print_info "核对用户配置"
+    print_info "正在核对用户配置"
 
     if test -s /www/server/panel/vhost/cert/${your_domain}/fullchain.pem; then
        print_info "已找到SSL证书"
